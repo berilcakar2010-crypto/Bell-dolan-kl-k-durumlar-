@@ -17,11 +17,11 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.markdown("<h1 style='text-align: center; color: #00FF41; text-shadow: 0 0 15px #00FF41;'>⚡ QUANTUM ENTANGLEMENT: BELL STATES</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #00FF41; text-shadow: 0 0 15px #00FF41;'> KUANTUM DOLANIKLIK (BELL DURUMLARI)</h1>", unsafe_allow_html=True)
 
 st.markdown("""
 <div style='border: 1px solid #00FF41; padding: 15px; border-radius: 5px; background-color: #050505;'>
-    [SYSTEM_INFO]: İki farklı kubitin kaderinin birbirine bağlandığı 'Dolaşıklık' (Entanglement) gözlemleniyor. 
+    [BİLGİ]: İki farklı kubitin kaderinin birbirine bağlandığı 'Dolaşıklık' (Entanglement) gözlemleniyor. 
     Bir kubit üzerindeki ölçüm, ışık hızından bağımsız olarak diğerinin durumunu anında belirler.
 </div>
 """, unsafe_allow_html=True)
@@ -65,7 +65,7 @@ state = Statevector.from_instruction(qc)
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown("### 🌀 Bloch Küreleri (Ayrı Bakış)")
+    st.markdown("### Bloch Küreleri (Ayrı Bakış)")
     # İki kubitin durumunu yan yana gösterir
     fig1 = plot_bloch_multivector(state)
     fig1.patch.set_facecolor('black')
@@ -73,7 +73,7 @@ with col1:
     st.caption("Not: Dolaşık sistemlerde bireysel kubitler 'belirsiz' (kürenin merkezinde) görünür.")
 
 with col2:
-    st.markdown("### 📊 State City (Sistem Matrisi)")
+    st.markdown("### Sistem Matrisi")
     # Sistemin yoğunluk matrisini 3D sütunlarla gösterir
     fig2 = plot_state_city(state, color=['#00FF41', '#008F11'])
     fig2.patch.set_facecolor('black')
