@@ -27,7 +27,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # İnteraktif Seçim Alanı
-st.sidebar.markdown("### [CONTROL_PANEL]")
+st.sidebar.markdown("### [KONTROL PANELİ]")
 bell_choice = st.sidebar.selectbox(
     "Oluşturulacak Bell Durumunu Seçin:",
     ["|Φ+⟩", "|Φ-⟩", "|Ψ+⟩", "|Ψ-⟩"]
@@ -82,7 +82,7 @@ with col2:
 # Bilimsel Analiz Raporu
 st.markdown(f"""
 <div style="background-color: #0a0a0a; padding: 20px; border-left: 5px solid #00FF41; margin-top: 20px;">
-    <h4 style="color: #00FF41; margin-top: 0;">🔍 ANALİZ RAPORU: {bell_choice}</h4>
+    <h4 style="color: #00FF41; margin-top: 0;">BELL DOLANIKLIK DURUMLARI NEDİR? {bell_choice}</h4>
     <p><b>DURUM TANIMI:</b> {desc}</p>
     <p><b>MATEMATİKSEL FORM:</b> Bu durum, iki kubitin klasik bir şekilde açıklanamayacak 
     istatistiksel bir bağ kurduğunu kanıtlar. Bu bağ, kuantum teleportasyon ve kriptografinin temelidir.</p>
